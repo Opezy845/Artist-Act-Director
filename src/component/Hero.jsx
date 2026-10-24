@@ -1,13 +1,12 @@
 import {FiArrowRight, FiInstagram} from "react-icons/fi";
 import { FaTiktok } from "react-icons/fa6";
 import { FiPlay } from "react-icons/fi";
-import girllImage from "../assets/girll.png";
-import imageseeImage from "../assets/imagesee.jpg";
+import personalImage from "../assets/personal.png";
 import { useState } from "react";
 
 function Hero(){
     return(
-  <section className="hero-section">
+  <section className="hero-section" id="home">
     <div className="hero-content">
       <div className="hero-label">
         ARTIST <span><b>.</b></span> DIRECTOR
@@ -21,10 +20,10 @@ function Hero(){
       </h2>
 
       <p className="text1">
-        I create powerful visual art pointillism,
-        bring real stories to life on screen, and direct,
-        projects that make people feel, think and see
-        the world differently.
+       I transform ideas into striking pointillism art, bring compelling 
+       stories to life through film, and direct creative projects that blend 
+       emotion, imagination, and visual storytelling to inspire people, spark 
+       new perspectives, and leave a lasting impression.
       </p>
 
       <div className="hero-action" id="home">
@@ -47,18 +46,16 @@ function Hero(){
           <FaTiktok />
         </a>
       </div>
+          <p className="create">Create<span>.</span> Express <span>.</span>Inspire</p>
     </div>
-
-    {/* IMPORTANT: Images are now siblings of hero-content */}
     <div className="hero-images">
       <div className="hero-image portrait-image">
-        <img src={girllImage} alt="Artist portrait" />
-      </div>
-
-      <div className="hero-image director-image">
-        <img src={imageseeImage} alt="Film directing on set" />
+        <img src={personalImage} alt="Artist portrait" />
       </div>
     </div>
+    {/* <div >
+     
+    </div> */}
   </section>
 );
 
